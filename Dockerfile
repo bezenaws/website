@@ -1,6 +1,5 @@
 FROM bezenaws/apache2_ubuntu
 
-function prompt { "$pwd>" } 
-RUN rm ./index.html
+RUN rm /var/www/html
 
 ADD ./* /var/www/html
